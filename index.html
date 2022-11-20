@@ -5,41 +5,128 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/p5.collide2d"></script>
   <title>replit</title>
-  
-    <title>Contact Messages | Firebase</title>
-    <link rel="stylesheet" href="./styles.css">
-  
   <link href="style.css" rel="stylesheet" type="text/css" />
   <style>
+    body{
+      background-color: rgb(246, 156, 57);
+    }
+    h1 {
+      color: rgb(5, 12, 23);
+    }
+    .header-stamp {
+      background-color: hsl(255, 48%, 46%);
+      font-size: 35px;
+      text-align: center;
+    }    
+    .paragraph-event {
+      font-family: sans-serif;
+      font-size: 15px;
+    }      
+    .content-link {
+      font-weight: bold;
+    }
+    .navMenu {
+      height: 60px;
+      position: relative;
+      top: -2.5%;
+      border: 4px solid hsl(255, 48%, 46%);
+    }
+    .center {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+    .button {
+      height:38px;
+      width:225px;
+      margin-left: 4px;
+      margin-right: 4px;
+      margin-top: 4px;
+      margin-bottom: 4px;
+      padding-top: 10px;
+      padding-bottom: 5px;
+      font-size: 30px;
+      text-align: center;
+      font-family: "Times New Roman";
+      text-decoration:none;
+      color: rgb(5, 12, 23);
+      background-color: hsl(255, 48%, 62%);
+      border-radius: 8px;
+      border: none;
+      float:left;
+      transition-duration: 0.4s;
+    }
+    .button:hover {
+      background-color: hsl(255, 48%, 75%);
+      color: rgb(5, 12, 23);
+    }
+    .antiSwagCorp {
+      text-decoration:none;
+      color: rgb(5, 12, 23);
+    }
+    #header {
+      text-align: center;
+      font-family: "sans-serif";
+      font-size: 35px;
+      margin-top: -30px;
+      margin-bottom: -15px;
+    }
     #txt {
       text-align: center;
-      margin-top: 15px;
-      margin-bottom: 10px;
-      font-family: "Comic Sans MS";
+      font-family: "sans-serif";
+      margin-top: -15px;
+    }
+    #TitleDiv {
+      text-align: left;
+      margin-top:10px;
+    }
+    #DefDiv {
+      text-align: center;
+      margain-top:10px;
     }
   </style>
 </head>
 
 <body>
-  
-
   <script src="https://www.gstatic.com/firebasejs/3.5.2/firebase.js"></script>
-    <script src="people.js"></script>    
-    <script src="stats.js"></script>    
+  <script src="people.js"></script>    
+  <script src="stats.js"></script>    
   <script src="index.js"></script>
   <script src="buttons.js"></script>
   <script src="buildings.js"></script>
   <script src="sketch.js"></script>
 
-  <h1 id='txt'>Sustainable cities and communities: making our settlements better places</h1>
-  <p id='txt'>Often now, we find ourselves in an increasingly complex society that seems to further   stray from social, environmental and economic goals. As seen with high housing prices, places that become impossible to navigate without personal transportation, and dwindling resources that are available to people living in these communities. <br></br >We will go over how to make our communities more sustainable by making them more environmentally friendly, more accessible to its citizens, and economically viable without ruining the future prospects of this or other communities.
-  </p>
+  <div id='TitleDiv'>
+    <img src='sustainabledevelopmenttext.png'>
+  </div>
+  <div id='DefDiv'>
+    <img src='sustainabledefined.png'>
+  </div>
+
+  <h2 id = 'header'>You are on: Home Page</h2>
+  <h3 class = 'header-stamp'>Navigation Menu:</h3>
+  <div class ='navMenu'>
+    <div class ='center'>
+        <a class = 'button' href = 'sustainability.html'>Sustainability</a>
+        <a class = 'button' href = 'factors.html'>Factors</a>
+        <a class = 'button' href = 'actions.html'>Actions</a>
+        <a class = 'button' href = 'effects.html'>Effects</a>
+    </div>
+  </div>
+  <!--
+  antiSwagCorp class obsolete!
+  -->
+
+  <h1 id = 'txt'>Use the Navigation Menu to learn more about the UN's 11th Sustainable Goal: Sustainable Cities and Communities</h1>
+  <h2 id = 'txt'>Or, run the simulation below to see the impacts of certain actions on overall sustainability.</h2>
   <!--
   <img src='fb8.jpg'>
   -->
@@ -50,11 +137,6 @@
   teal, blue, blurple, magenta, pink!
   -->
   <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
-
-
-   
-
-
 </body>
 
 </html>
